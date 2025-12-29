@@ -17,7 +17,10 @@ Resources:
       BucketName: !Sub "${AWS::StackName}-${Environment}-bucket-amin"
       Tags:
         - Key: "Environment"
-          Value: !Ref Environment
+          Value: !Ref Environment               
+        - Key: "Project"
+          Value: "GitHubActionsTesting"
+  
 
 Outputs:
   BucketName:
