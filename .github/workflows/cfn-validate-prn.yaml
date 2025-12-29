@@ -6,8 +6,8 @@ on:
       - "cloudformation/**"
 
 permissions:
-  contents: write
-  pull-requests: read
+  pull-requests: write
+  contents: read
 
 jobs:
   validate_cfn:
